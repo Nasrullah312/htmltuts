@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: aqua;
+        }
+        .container{
+           background:tomato;
+           width: 300px;
+           margin: 50px auto;
+           padding: 10px;
+           border: 3px solid red;
+           height: 500px;
+           justify-content: space-evenly;
+           display: flex;
+           flex-wrap: wrap;
+           font-size: 40px;
+           font-weight: 800;
+           text-align: center;
+           box-shadow: 6px 6px 0px red,12px 12px green,18px 18px black;
+           border-radius: 30px;
+        }  
+        .items1 {background: antiquewhite; border-radius: 20px; }
+        .items2 {background: gold; border-radius: 20px;}
+        .items3 {background:grey; border-radius: 20px;}
+        .items4 {background:navajowhite;flex-basis:250px; border-radius: 20px;}
+        .items5 {background:aquamarine; order: -1; border-radius: 20px;}
+    </style> 
+    </head>
+    <body>
+    <div class="container">  
+        <div class="items items1">one</div> <br>
+        <div class="items items2">two</div> <br>
+        <div class="items items3">three</div> <br>
+        <div class="items items4">four</div>  <br>
+        <div class="items items5">five</div>  <br>
+    </div>
+    </body>
+    </html>

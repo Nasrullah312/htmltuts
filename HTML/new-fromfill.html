@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 75%;
+            margin: 0 auto;
+        }
+
+        form {
+            padding: 10px;
+            margin: 20px auto;
+            background-color: aqua;
+            width: 250px;
+            height: 450px;
+            border-radius: 20px;
+        }
+
+        input.box {
+            width: 100%;
+            padding: 8px 0;
+            border-radius: 10px;
+            border: 1px solid #333;
+            margin-bottom: 8px;
+        }
+
+        label {
+            color: slategray;
+            text-transform: capitalize;
+            font-weight: 700;
+        }
+
+        .gender {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        button.btn {
+            /* display: flex; */
+            /* justify-content: center; */
+            padding: 6px 52px;
+            border-radius: 10px;
+            background:linear-gradient(red,green,pink,white);
+            margin: 60px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="">
+            <label for>username:-</label><br>
+            <input type="text" placeholder="Enter name" class="box" id="name"><br>
+            <label for="">email:-</label><br>
+            <input type="email" placeholder=" Enter email" class="box" id="email"> <br>
+            <label for=""> password:-</label><br>
+            <input type="password" placeholder="password" class="box" id="password"><br>
+            <label style="margin-bottom: 10px;">Gender:-</label>
+            <div class="gender">
+                <div style="margin-right: 10px;">
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                </div>
+                <div>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                </div>
+            </div>
+            <button class="btn">login</button>
+        </form>
+    </div>
+</body>
+
+</html>

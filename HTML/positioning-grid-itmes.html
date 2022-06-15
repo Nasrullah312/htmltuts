@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <style>
+      body {
+         font-family: Arial, Helvetica;
+      }
+
+      .container {
+         background: ghostwhite;
+         width: 700px;
+         margin: 50px 0 0 50px;
+         min-height: 600px;
+
+         display: grid;
+         grid-template-columns: repeat(3, 1fr);
+         grid-template-rows: 150px 150px;
+         grid-gap: 20px;
+
+      }
+
+      .itmes1 {
+           background: orange;
+           /* grid-row-start: 2;
+           grid-row-end: 3;
+           grid-column-start: 3;
+           grid-column-end: 4; */
+           grid-row: 2/3;
+           grid-column: 3/4;
+      }
+
+
+      .itmes2 {
+         background: olive;
+      }
+
+      .itmes3 {
+         background: bisque;
+         grid-row-start: 2;
+      }
+
+      .itmes4 {
+         background: rebeccapurple;
+      }
+
+      .itmes5 {
+         background: green;
+      }
+
+      .itmes6 {
+         background: grey;
+       /*grid-row-start: 1;
+         grid-row-end: 2;
+         grid-column-start: 1;
+         grid-column-end: 2; */
+         grid-row: 1/2;
+         grid-column: 1/2;
+      }
+   </style>
+</head>
+
+<body>
+   <h2>name</h2>
+
+   <div class="container">
+      <div class="itmes itmes1">one</div>
+      <div class="itmes itmes2">two</div>
+      <div class="itmes itmes3">three</div>
+      <div class="itmes itmes4">four</div>
+      <div class="itmes itmes5">five</div>
+      <div class="itmes itmes6">six</div>
+   </div>
+</body>
+
+</html>
